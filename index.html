@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Form</title>
+		<link href="css/bootstrap3.css" rel="stylesheet">
+		<link href="css/form.css" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="m-form">
+					<form action="https://www.google.com" onsubmit=" return valid();">
+						<div class="u-name">
+							<p>User Name:</p>
+							<input type="text" placeholder="Please Enter Your Name" class="form-control" id="u-name" onkeyup="return nBlur();" autocomplete="off">
+							<span class="name-error"></span>
+						</div><!--u-name-->
+						<div class="m-number">
+							<p>Mobile Number:</p>
+							<input type="text" placeholder="Please Enter Your Phone Number" class="form-control" onkeyup="pBlur();" id="p-number" autocomplete="off">
+							<span class="phone-error"></span>
+						</div><!--m-number-->
+						
+						<div class="m-email">
+							<p>Email:</p>
+							<input type="text" placeholder="Please Enter Your Email" class="form-control" id="m-email" onkeyup="eBlur();" autocomplete="off">
+							<span class="email-error"></span>
+						</div><!--m-number-->
+						<input type="submit" value="SUBMIT" class="btn btn-success">
+					</form>
+				</div><!--m-form-->
+			</div><!--container-->
+		</main>
+		<script src="js/form.js"></script>
+	</body>
+</html>
